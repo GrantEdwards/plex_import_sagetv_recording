@@ -1,4 +1,4 @@
-==plex_import_sage_recording
+## plex_import_sage_recording
 
 plex_import_sage_recording.py is a simple Python-2 command-line
 application I wrote to import SageTv DVR recordings into PlexDVR.
@@ -37,7 +37,7 @@ db = TheTvDb(apikey='YOUR-HEX-APIKEY', userkey='YOUR-HEX-USERKEY', username='you
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-===Usage
+### Usage
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

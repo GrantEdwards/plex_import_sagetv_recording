@@ -1,7 +1,7 @@
 ## plex_import_sage_recording
 
 plex_import_sage_recording.py is a simple Python-2 command-line
-application I wrote to import SageTv DVR recordings into PlexDVR.
+application I wrote to import SageTv DVR recordings into a Plex library.
 It was written to run on Linux. I don't remember doing anything that's
 Linux-specific, so there's a good chance it will work on Windows
 (maybe with some minor tweaking).
@@ -11,7 +11,7 @@ It gets metadata from one of two places:
  1. It looks for metadata tags that newer versions of the SageTv
     backend appends to the ATSC transport stream recording files. If
     present, those tags contain series name, eipsode name, season and
-    episode numbers.
+    episode numbers, and various other info.
 
  2. If SageTv metadata tags aren't found, then it assumes that the
     existing filename is in a specific format used by SageTv
@@ -41,6 +41,6 @@ db = TheTvDb(apikey='YOUR-HEX-APIKEY', userkey='YOUR-HEX-USERKEY', username='you
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ plex_import_sagetv_recording.py --libpath=/Plex/Old [--pretend] <sage-recording-file> [...]
+$ plex_import_sagetv_recording.py [--pretend] --libpath=<plex-library-path> <sage-recording-file> [...]
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
